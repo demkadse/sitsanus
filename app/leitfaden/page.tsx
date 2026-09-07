@@ -1,0 +1,7 @@
+import Link from "next/link";
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
+import { guides } from "@/components/guides";
+import { photoPool } from "@/components/photo-pool";
+export const metadata = { title: "Ergonomie-Leitfäden", description: "Praktische, verständliche Leitfäden für deinen Arbeitsplatz." };
+export default function GuidePage() { return <><Header /><main className="guide-overview"><section className="guide-hero"><div className="shell guide-hero-grid"><div><p className="eyebrow">Kostenlose Ergonomie-Leitfäden</p><h1>Einrichten.<br /><em>Verstehen. Wohlfühlen.</em></h1><p className="lead">Kein Fachchinesisch, keine perfekte Haltung. Sondern klare Schritte, mit denen dein Arbeitsplatz besser zu dir passt.</p><a className="button button-dark" href="#leitfaeden">Leitfäden ansehen <span>↓</span></a></div><img src={photoPool[0]} alt="Heller, aufgeräumter Bildschirmarbeitsplatz" /></div></section><section id="leitfaeden" className="guide-cards"><div className="shell"><p className="eyebrow">Dein Einstieg</p><div className="guide-card-grid">{guides.map((g,index) => <article key={g.slug}><img src={photoPool[index + 4]} alt="Detail eines modernen Arbeitsplatzes" loading="lazy" /><span>{g.number}</span><h2>{g.title}</h2><p>{g.intro}</p><Link href={`/leitfaden/${g.slug}`}>Leitfaden öffnen <span>→</span></Link></article>)}</div></div></section></main><Footer /></>; }

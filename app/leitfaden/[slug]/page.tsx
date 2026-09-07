@@ -1,0 +1,7 @@
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
+import { guides } from "@/components/guides";
+export function generateStaticParams() { return guides.map(({ slug }) => ({ slug })); }
+export default async function GuideDetail({ params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; const guide = guides.find(item => item.slug === slug); if (!guide) notFound(); return <><Header /><main className="guide-detail"><section className="guide-detail-hero"><div className="shell narrow"><Link className="back-link" href="/leitfaden">← Alle Leitfäden</Link><p className="eyebrow">Leitfaden {guide.number}</p><h1>{guide.title}</h1><p className="lead">{guide.intro}</p></div></section><section className="guide-steps"><div className="shell narrow">{guide.steps.map(([title, text], index) => <article key={title}><span>{String(index + 1).padStart(2,"0")}</span><div><h2>{title}</h2><p>{text}</p></div></article>)}<aside><strong>Gut zu wissen</strong><p>Starte mit einer kleinen Veränderung. Beobachte ein paar Tage, was sich dadurch im Alltag verbessert.</p></aside></div></section><section className="guide-next"><div className="shell narrow"><p className="eyebrow">Der nächste Schritt</p><h2>Was kann deinen Arbeitsplatz zusätzlich unterstützen?</h2><Link className="button button-dark" href="/shop">Passende Ausstattung entdecken <span>→</span></Link></div></section></main><Footer /></>; }
