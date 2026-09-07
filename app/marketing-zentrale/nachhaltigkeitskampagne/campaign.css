@@ -1,4 +1,8 @@
 .campaign { background:var(--paper); }
+.project-header { background:var(--ink); color:var(--paper); padding:1rem 0; }
+.project-header .shell { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; font-size:.85rem; }
+.project-header a { text-decoration:underline; text-underline-offset:4px; }
+.project-header a:focus-visible { outline:2px solid white; outline-offset:5px; }
 .campaign-hero { padding:clamp(3rem,7vw,6rem) 0 3rem; background:linear-gradient(125deg,#f7f6f1,#e1e8db); }
 .campaign-hero h1 { font-size:clamp(2.7rem,6.5vw,6rem); }
 .campaign-hero .lead { max-width:720px; margin-top:1.7rem; }

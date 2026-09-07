@@ -1,4 +1,4 @@
-export const metadata = { title: "Kampagne: Ziele & Auswertung", alternates: { canonical: "/nachhaltigkeitskampagne/auswertung/" } };
+export const metadata = { title: "Kampagne: Ziele & Auswertung", alternates: { canonical: "/marketing-zentrale/nachhaltigkeitskampagne/auswertung/" } };
 const risks = [
   ["Greenwashing", "Konkrete Belege statt pauschaler Umweltversprechen. Ungeprüfte Herkunfts- und Produkteigenschaften zuerst verifizieren."],
   ["Verkauf versus Weiterverwendung", "Auch der Verzicht auf einen Neukauf ist ein gutes Beratungsergebnis; keine Kaufpflicht für den Check."],
@@ -9,7 +9,7 @@ const risks = [
   ["Messlücken", "Formular und Zuordnung vorab testen, Dubletten entfernen und nicht zuordenbare Anfragen separat ausweisen."],
 ];
 export default function EvaluationPage() {
-  return <><section className="campaign-intro"><p className="eyebrow">Das SMART-Ziel</p><h2>30 Anfragen.<br /><em>In acht Wochen.</em></h2><p>Im Pilot sollen mindestens 30 gültige Anfragen für den kostenlosen Arbeitsplatz-Check aus eindeutig zugeordneten Instagram-Kampagnenbesuchen entstehen. Geplant sind 600 messbare Sitzungen und mindestens 5 % Anfrage-Conversion.</p></section><div className="campaign-targets"><article><strong>30</strong><span>gültige Anfragen</span></article><article><strong>600</strong><span>messbare Sitzungen</span></article><article><strong>5 %</strong><span>Anfrage-Conversion</span></article></div><p className="campaign-caption">Planungswerte, keine gemessenen Ergebnisse oder Marktbenchmarks. 600 × 5 % = 30.</p><dl className="campaign-mix">{[
+  return <><section className="campaign-intro"><p className="eyebrow">Aufgaben 3 & 7 · SMART und KPIs</p><h2>Ziele festlegen.<br /><em>Erfolg kontrollieren.</em></h2><p>Als kaufmännisches Kampagnenziel plane ich mindestens 30 gültige Beratungsanfragen innerhalb von acht Wochen. Meine Rechnung setzt 600 messbare Instagram-Kampagnensitzungen und mindestens 5 % Anfrage-Conversion voraus. Die KPIs ermöglichen mir, Interesse, Kontaktaufnahme und Zielerreichung getrennt zu beurteilen.</p></section><div className="campaign-targets"><article><strong>30</strong><span>gültige Anfragen</span></article><article><strong>600</strong><span>messbare Sitzungen</span></article><article><strong>5 %</strong><span>Anfrage-Conversion</span></article></div><p className="campaign-caption">Planungswerte, keine gemessenen Ergebnisse oder Marktbenchmarks. 600 × 5 % = 30.</p><dl className="campaign-mix">{[
   ["Spezifisch", "Konkrete Anfragen für den Arbeitsplatz-Check gewinnen."],
   ["Messbar", "Gültige Anfragen und zugehörige Kampagnensitzungen erfassen; Spam, Tests und Dubletten ausschließen."],
   ["Attraktiv / akzeptiert", "Orientierung für Interessierte und Beratungskontakte für SitSanus; Beratungsumfang vorab im Team abstimmen."],

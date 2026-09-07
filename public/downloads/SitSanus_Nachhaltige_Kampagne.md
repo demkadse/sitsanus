@@ -1,7 +1,11 @@
-# SitSanus: Nachhaltige Kampagne
+# SitSanus: Kaufmännische Planung einer Nachhaltigkeitskampagne
 
 **Kampagnenidee: „Dein Arbeitsplatz. Bewusst weitergedacht.“**  
-Theoretisches Konzept zur Aufgabenstellung · Stand: 7. September 2026
+Projektdokumentation · Kaufmann im E-Commerce · Stand: 7. September 2026
+
+## Zweck der Projektarbeit
+
+In meiner Rolle als Kaufmann im E-Commerce plane und begründe ich eine Nachhaltigkeitskampagne für das Projekt SitSanus. Diese Ausarbeitung dokumentiert meine Analyse, Entscheidungen, Ressourcenplanung und Erfolgskontrolle. Sie richtet sich an die Projektbearbeitung und Bewertung. Die beschriebenen Kunden sind die Zielgruppe der geplanten Kampagne, nicht die Adressaten dieser Dokumentation.
 
 ## Ausgangssituation und Annahmen
 

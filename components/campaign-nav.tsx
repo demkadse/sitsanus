@@ -4,10 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const tabs = [
-  ["/nachhaltigkeitskampagne", "01", "Idee & Zielgruppe"],
-  ["/nachhaltigkeitskampagne/strategie", "02", "Marke & Strategie"],
-  ["/nachhaltigkeitskampagne/umsetzung", "03", "Umsetzung"],
-  ["/nachhaltigkeitskampagne/auswertung", "04", "Ziele & Auswertung"],
+  ["/marketing-zentrale/nachhaltigkeitskampagne", "01", "Idee & Zielgruppe"],
+  ["/marketing-zentrale/nachhaltigkeitskampagne/strategie", "02", "Marke & Strategie"],
+  ["/marketing-zentrale/nachhaltigkeitskampagne/umsetzung", "03", "Umsetzung"],
+  ["/marketing-zentrale/nachhaltigkeitskampagne/auswertung", "04", "Ziele & Auswertung"],
 ];
 
 export function CampaignNav() {
