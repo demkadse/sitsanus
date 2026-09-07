@@ -1,0 +1,20 @@
+import Link from "next/link";
+export const metadata = { title: "Kampagne: Umsetzung", alternates: { canonical: "/nachhaltigkeitskampagne/umsetzung/" } };
+const formats = [
+  ["Reel", "Anpassen sichtbar machen", "Eine vorhandene Arbeitsplatzkonfiguration und mögliche Anpassungen erklären, ohne automatisch neue Produkte einzusetzen."],
+  ["Carousel", "Entscheidungen strukturieren", "Schritte zum Weiterverwenden, Prüfen von Reparaturen und gezielten Ergänzen als speicherbare Orientierung planen."],
+  ["Story", "Fragen verstehen", "Unsicherheiten zum bestehenden Arbeitsplatz über Fragen und Umfragen sammeln."],
+  ["Anzeige", "Zum Check führen", "Das geplante Beratungsangebot erklären und zur Kampagnen-Landingpage verlinken."],
+  ["UGC · optional", "Erfahrungen einbeziehen", "Freiwillige zeigen, welche vorhandenen Elemente sie weiterverwenden. Nutzung nur mit Einwilligung."],
+  ["Live · einmalig", "Vertrauen vertiefen", "Fragen zur Ausstattung und zu belegbaren Eigenschaften beantworten; Grenzen des Angebots offenlegen."],
+];
+const phases = [
+  ["Vorbereitung", "2 Wochen vorab", "Nachweise, Serviceumfang, Zuständigkeiten, Landingpage, Formular und Messung vor dem Start klären."],
+  ["Aufmerksamkeit", "Woche 1–2", "Thema vorstellen, Fragen sammeln und zwei Anzeigenansätze mit kleinem Budget vergleichen."],
+  ["Orientierung", "Woche 3–4", "Entscheidungshilfen und belegbare Informationen vertiefen; erste Ergebnisse auswerten und Ansprache anpassen."],
+  ["Beteiligung", "Woche 5–6", "Freiwillige Erfahrungen aufgreifen, eine Live-Fragerunde durchführen und den Check hervorheben."],
+  ["Anfragen & Abschluss", "Woche 7–8", "Offene Fragen beantworten, zur Beratung einladen und Erkenntnisse zusammenführen."],
+];
+export default function ImplementationPage() {
+  return <><section className="campaign-intro"><p className="eyebrow">Kanäle & Formate</p><h2>Ein Kanal.<br /><em>Ein klarer Weg.</em></h2><p>Instagram ist der Hauptkanal des Piloten. Organische Beiträge erklären und ermöglichen Dialog; Anzeigen führen zur Website. Die Kanalwahl folgt der angenommenen Persona und wird im Pilot überprüft.</p></section><div className="campaign-flow"><span>Instagram</span><span aria-hidden="true">→</span><span>Kampagnenseite</span><span aria-hidden="true">→</span><span>Arbeitsplatz-Check</span></div><p className="campaign-caption">Geplanter Nutzerweg. Eine echte Anfragefunktion und das Beratungsangebot sind vor dem Kampagnenstart einzurichten.</p><div className="campaign-grid">{formats.map(([format, title, text]) => <article className="campaign-card" key={format}><p className="eyebrow">{format}</p><h3>{title}</h3><p>{text}</p></article>)}</div><section className="campaign-section"><p className="eyebrow">Zeitplan</p><h2>Acht Wochen. Schritt für Schritt.</h2><ol className="campaign-timeline">{phases.map(([title, time, text]) => <li key={title}><span>{time}</span><div><h3>{title}</h3><p>{text}</p></div></li>)}</ol></section><div className="campaign-grid"><article className="campaign-card campaign-dark"><p className="eyebrow">Geplanter Rhythmus</p><h3>Hilfreich und überschaubar.</h3><ul><li>Ein Reel und ein Carousel pro Woche.</li><li>Stories an zwei Tagen pro Woche.</li><li>Eine Live-Fragerunde in acht Wochen.</li><li>UGC freiwillig, ohne Abhängigkeit im Zeitplan.</li></ul></article><article className="campaign-card"><p className="eyebrow">Ressourcen · Annahme</p><h3>600 € Anzeigenbudget.</h3><p>100 € für die ersten zwei Wochen, 500 € für die folgenden sechs. Eine Person verantwortet Planung und Auswertung, eine fachkundige Person prüft Aussagen und berät. Personalaufwand wird separat eingeplant.</p><p>Kommentare und Anfragen werden an Werktagen betreut. Die Budgetverteilung wird nach der Testphase überprüft.</p></article></div><p className="campaign-caption">Hier werden ausschließlich Themen und Formate geplant. Es wurden keine Kampagnenposts oder Werbemittel produziert. Formatgrundlage: <a href="https://www.facebook.com/business/ads/facebook-instagram-reels-ads">Meta – Reels Ads</a>.</p><Link className="text-link campaign-next" href="/nachhaltigkeitskampagne/auswertung">Weiter: Ziele & Auswertung →</Link></>;
+}

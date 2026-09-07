@@ -1,0 +1,20 @@
+import Link from "next/link";
+export const metadata = { title: "Kampagne: Marke & Strategie", alternates: { canonical: "/nachhaltigkeitskampagne/strategie/" } };
+const swot = [
+  ["S", "Stärken", "Intern", "Klare Ergonomie-Positionierung, verständliche Beratung, kostenloser Leitfaden und persönliche Gründergeschichte.", "Beratung und Orientierung als Einstieg nutzen."],
+  ["W", "Schwächen", "Intern", "Shop noch im Aufbau, Nachhaltigkeitsmerkmale nicht belegt, Social-Media-Kanäle und belastbare Kampagnendaten fehlen.", "Mit einem kleinen Pilot beginnen und Nachweise vor dem Start prüfen."],
+  ["O", "Chancen", "Extern", "Die Zielgruppe sucht laut Aufgabenstellung nachhaltige Entscheidungen. Social Media bietet Raum für Fragen und verständliche Erklärungen.", "Bestand, Pflege und gezielte Ergänzung zum Thema machen."],
+  ["T", "Risiken", "Extern", "Skepsis gegenüber Umweltversprechen, Konkurrenz um Aufmerksamkeit und schwankende organische Reichweite.", "Belege zeigen, Kritik beantworten und ein begrenztes Testbudget einsetzen."],
+];
+const mix = [
+  ["Product", "Produkt", "Ergonomische Ausstattung plus Beratung. Der Check beginnt beim Bestand. Material-, Haltbarkeits- und Reparaturaussagen nur mit Nachweisen."],
+  ["Price", "Preis", "Kostenloser Check ohne Kaufpflicht. Preise und Servicekosten transparent nennen; auf künstlichen Zeitdruck verzichten."],
+  ["Place", "Distribution", "Instagram führt zur Website und zum Anfrageweg. Pilotregion Frankfurt/Rhein-Main; Liefer- und Beratungsgebiet vorher bestätigen."],
+  ["Promotion", "Kommunikation", "Reels, Carousels, Stories, Anzeigen und eine Fragerunde schaffen Orientierung und führen zur Beratung."],
+  ["People", "Menschen", "Fachkundige Beratung und erreichbare Ansprechpartner. Das Team kennt belegte Eigenschaften und offene Fragen."],
+  ["Process", "Prozesse", "Besuch → Anfrage → Bestandsaufnahme → Empfehlung → optionaler Kauf. Weiterverwendbare Elemente werden ausdrücklich festgehalten."],
+  ["Physical Evidence", "Sichtbare Belege", "Nachprüfbare Materialangaben, tatsächliche Servicebedingungen und echte Erfahrungsberichte. Stockbilder belegen keine eigene Produktion."],
+];
+export default function StrategyPage() {
+  return <><section className="campaign-intro"><p className="eyebrow">SWOT-Analyse</p><h2>Auf Stärken aufbauen.<br /><em>Offene Fragen benennen.</em></h2><p>SitSanus positioniert sich mit ergonomischer Ausstattung und verständlicher Beratung. Das Nachhaltigkeitsprofil muss durch überprüfbare Leistungen wachsen.</p></section><div className="campaign-grid">{swot.map(([letter, title, scope, text, action]) => <article className="campaign-card" key={letter}><div className="campaign-card-heading"><span className="campaign-letter">{letter}</span><span className="campaign-tag">{scope}</span></div><h3>{title}</h3><p>{text}</p><p className="campaign-action"><strong>Konsequenz:</strong> {action}</p></article>)}</div><aside className="campaign-note"><strong>Geplante Differenzierung</strong><p>Die Bestandsprüfung setzt vor dem Verkauf an. Auch die Weiterverwendung vorhandener Ausstattung ist ein gutes Beratungsergebnis. Eine branchenweite Einzigartigkeit wird damit nicht behauptet.</p></aside><section className="campaign-section"><p className="eyebrow">Der Kampagnenmix</p><h2>Die sieben Ps.</h2><dl className="campaign-mix">{mix.map(([name, label, text], i) => <div key={name}><dt><span>0{i + 1}</span><strong>{name}</strong><small>{label}</small></dt><dd>{text}</dd></div>)}</dl></section><aside className="campaign-note"><strong>Was bisher belegt ist – und was nicht</strong><p>Die Projektwebsite beschreibt Entwicklung und Produktion in Frankfurt. Das ist keine unabhängige Bestätigung. Materialherkunft, Reparierbarkeit, Ersatzteilversorgung und Umweltwirkungen müssen vor entsprechenden Kampagnenaussagen geprüft werden.</p></aside><Link className="text-link campaign-next" href="/nachhaltigkeitskampagne/umsetzung">Weiter: Umsetzung →</Link></>;
+}
