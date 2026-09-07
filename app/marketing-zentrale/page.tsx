@@ -11,5 +11,5 @@ export const metadata: Metadata = {
 };
 
 export default function MarketingDashboardPage() {
-  return <><Header /><aside className="campaign-entry"><div className="shell"><div><p className="eyebrow">Projektarbeit · Kaufmann im E-Commerce</p><h2>Nachhaltigkeitskampagne planen.</h2><p>Meine Ausarbeitung zur Aufgabenstellung: SWOT, Kampagnenidee, SMART-Ziel, Persona, Umsetzung, 7 Ps und Erfolgsmessung für SitSanus.</p></div><Link className="button button-dark" href="/marketing-zentrale/nachhaltigkeitskampagne">Projektdokumentation öffnen →</Link></div></aside><SocialMediaDashboard /><Footer /></>;
+  return <><Header /><aside className="campaign-entry"><div className="shell"><div><p className="eyebrow">Nachhaltigkeitskampagne</p><h2>Bewusst weitergedacht.</h2><p>Acht Wochen, ein Kanal, 30 Beratungsanfragen. Strategie und Maßnahmen für bewusste Arbeitsplatzentscheidungen.</p></div><Link className="button button-dark" href="/marketing-zentrale/nachhaltigkeitskampagne">Kampagnenplanung öffnen →</Link></div></aside><SocialMediaDashboard /><Footer /></>;
 }
